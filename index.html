@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./fontawesome-free-6.3.0-web/css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>yamme</title>
+</head>
+<body>
+    <!-- side bar -->
+    <div class="side-bar position-fixed start-0 bg-white d-flex flex-column justify-content-between align-items-center  h-100">
+        <img src="./imgs/logo.png" class="w-50 mt-5 " alt="">
+        <i class="fa-solid fa-bars fa-2x text-dark menu"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"></i>
+        <div class="find-us mb-4 d-flex  flex-column">
+            <i class="fa-solid fa-globe text-dark"></i>
+            <i class="fa-solid fa-share-nodes mt-2 text-dark"></i>
+        </div>
+    </div>
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+  <div class="offcanvas-body bg-black d-flex flex-column justify-content-between">
+   <div class="options d-flex flex-column">
+    <ul class="list-unstyled">
+        <li id="Search" onclick="SearchInput()">Search</li>
+        <li id="category" onclick="getCategory()">Categories</li>
+        <li onclick="getArea()">Area</li>
+        <li onclick="getIngredients()">Ingredients</li>
+        <li onclick="contactUs()">Contact Us</li>
+    </ul>
+    </div>
+    <div class="side-bar-footer text-white">
+              <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-solid fa-globe text-dark"></i>
+         <p>Copyright Â© 2019 All Rights <br>
+Reserved.</p>
+    </div>
+   </div>
+  </div>
+</div>
+<div class="container">
+    <section class="Home py-5 ">
+        <div class="row " id="home-apis">
+
+        </div>
+</section>
+</div>
+<div class="container w-75" id="searchPlace">
+
+</div>
+<div class="container contact-Us" >
+    <div class="row ">
+         <!-- <div class="col-md-6">
+                           <div class="form-data">
+                              <input type="text" id="Name" class="form-control" placeholder="Enter your Name" />
+                              <ul class="alert alert-danger p-0 invalid-feedback">
+                                 <li>Name Is Required</li>
+                                 <li>Minmum Length 2 and Maxmum 20</li>
+                              </ul>
+                           </div>
+                        </div>
+                                      <div class="col-md-6">
+                                               <div class="form-data">
+                              <input type="text" id="Emial" class="form-control" placeholder="Enter your Emial" />
+                              <ul class="alert alert-danger p-0 invalid-feedback">
+                                 <li>Email not valid *exemple@yyy.zzz</li>
+                              </ul>
+                           </div>
+                                      </div>
+                                <div class="col-md-6">
+                                     <div class="form-data">
+                              <input type="text" id="Phone" class="form-control" placeholder="Enter your Phone" />
+                              <ul class="alert alert-danger p-0 invalid-feedback">
+                                 <li>Enter valid Phone Number</li>
+                              </ul>
+                           </div>
+                                </div>
+                          <div class="col-md-6">
+                            <div class="form-data">
+                              <input type="text" id="age" class="form-control" placeholder="Enter your age" />
+                              <ul class="alert alert-danger p-0 invalid-feedback">
+                                 <li>Enter valid age</li>
+                              </ul>
+                           </div>
+                          </div>
+                        <div class="col-md-6">
+                             <div class="form-data">
+                              <input type="text" id="Password" class="form-control" placeholder="Enter your Password" />
+                              <ul class="alert alert-danger p-0 invalid-feedback">
+                                 <li>Enter valid password *Minimum eight characters, at least one letter and one number:*</li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                             <div class="form-data">
+                              <input type="text" id="RePassword" class="form-control" placeholder="Enter your RePassword" />
+                              <ul class="alert alert-danger p-0 invalid-feedback">
+                                 <li>Enter valid repassword</li>
+                              </ul>
+                           </div>
+                        </div> -->
+   
+    </div>
+</div>
+<div class="loading d-none">
+    <span class="loader"></span>
+</div>
+<script src="./js/jquery-3.6.4.min.js"></script>
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/index.js"></script>
+</body>
+</html>
+
+<!-- data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" -->

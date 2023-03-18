@@ -1,0 +1,108 @@
+body {
+    background-color: #0D0D0D;
+    color: #f9f6f6 !important;
+}
+
+.side-bar {
+    width: 85px;
+}
+
+.options ul li {
+    margin-bottom: 15px;
+    margin-left: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.meal {
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.meal .meal-layer {
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    background-color: rgba(255, 255, 255, 0.548);
+    transition: 0.5s;
+}
+
+
+.meal:hover .meal-layer {
+    top: 0;
+}
+
+.ingrediants {
+    padding: 5px;
+    background-color: #cff4fc;
+    color: #055160;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.alerts {
+
+    padding: 5px;
+    background-color: #f8d7da;
+    color: #842029;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    position: relative;
+    animation: rotate 1s linear infinite
+}
+
+.loader::before, .loader::after {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    inset: 0px;
+    border-radius: 50%;
+    border: 5px solid #FFF;
+    animation: prixClipFix 2s linear infinite;
+}
+
+.loader::after {
+    inset: 8px;
+    transform: rotate3d(90, 90, 0, 180deg);
+    border-color: #FF3D00;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes prixClipFix {
+    0% {
+        clip-path: polygon(50% 50%, 0 0, 0 0, 0 0, 0 0, 0 0)
+    }
+
+    50% {
+        clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 0, 100% 0, 100% 0)
+    }
+
+    75%, 100% {
+        clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 100% 100%, 100% 100%)
+    }
+}
+
+.loading {
+    position: fixed;
+    z-index: 9999;
+    inset: 0;
+    background-color: #272b30e3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
